@@ -62,6 +62,4 @@ When helper mode is not available, macOS asks for administrator permission throu
 
 mac dns changer, macos dns changer, set dns on mac automatically, auto dns switcher mac, change dns mac app, networksetup dns tool, dns preset manager mac, mac dns utility, google dns mac, cloudflare dns mac, electron mac dns app
 
-## License
 
-Add your preferred license file (`LICENSE`) and update this section.
