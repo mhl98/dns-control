@@ -1,3 +1,8 @@
+<p align="center">
+<img width="632" height="832" alt="Screenshot 2026-05-10 at 12 53 33 PM" src="https://github.com/user-attachments/assets/2d61a965-5ab4-42c9-836c-3073d38c6047" />
+</p>
+
+
 # DNS Control (macOS DNS Changer)
 
 DNS Control is a desktop app to **set DNS on Mac automatically** with a simple UI.
@@ -44,11 +49,6 @@ Under the hood, DNS Control uses macOS `networksetup` to:
 
 When helper mode is not available, macOS asks for administrator permission through the standard password prompt.
 
-## Requirements
-
-- macOS
-- Node.js 18+ (recommended)
-- npm
 
 ## Security Notes
 
