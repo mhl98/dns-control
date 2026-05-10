@@ -1,4 +1,4 @@
-import { PresetCard } from './PresetCard.jsx'
+import { PresetCard } from "./PresetCard.jsx";
 
 export function PresetsPanel({
   busy,
@@ -13,7 +13,7 @@ export function PresetsPanel({
   onApplyServers,
   onRemovePreset,
 }) {
-  const hasPresets = presets.length > 0
+  const hasPresets = presets.length > 0;
 
   return (
     <section className="panel" aria-labelledby="presets-heading">
@@ -52,22 +52,35 @@ export function PresetsPanel({
           autoComplete="off"
           value={presetName}
           onChange={(e) => onPresetNameChange(e.target.value)}
-          placeholder="e.g. Shecan, Cloudflare"
+          placeholder="e.g. Google, Cloudflare"
         />
-        <button type="button" className="ghost" disabled={busy} onClick={onSavePreset}>
+        <button
+          type="button"
+          className="ghost"
+          disabled={busy}
+          onClick={onSavePreset}
+        >
           Save preset
         </button>
       </div>
 
       {!hasPresets ? (
-        <p className="muted preset-list-intro">No saved presets yet. Enter IPs above, a name, and Save preset.</p>
+        <p className="muted preset-list-intro">
+          No saved presets yet. Enter IPs above, a name, and Save preset.
+        </p>
       ) : (
         <div className="presets">
           {presets.map((p) => (
-            <PresetCard key={p.id} preset={p} busy={busy} onApply={onApplyServers} onRemove={onRemovePreset} />
+            <PresetCard
+              key={p.id}
+              preset={p}
+              busy={busy}
+              onApply={onApplyServers}
+              onRemove={onRemovePreset}
+            />
           ))}
         </div>
       )}
     </section>
-  )
+  );
 }

@@ -2,8 +2,8 @@ import { useCallback, useEffect, useState } from 'react'
 import { createPresetId } from '../utils/createId.js'
 import { serversFromIpInputs } from '../utils/serversFromInputs.js'
 
-const DEFAULT_IP_PRIMARY = '178.22.122.101'
-const DEFAULT_IP_SECONDARY = '185.51.200.1'
+const DEFAULT_IP_PRIMARY = '8.8.8.8'
+const DEFAULT_IP_SECONDARY = '8.8.4.4'
 
 function toErrorMessage(err) {
   if (typeof err === 'string') return err
