@@ -11,7 +11,8 @@
     "pack": "vite build && electron-builder --mac",
     "pack:universal": "vite build && electron-builder --mac --universal",
     "pack:arm64": "vite build && electron-builder --mac --arm64",
-    "pack:x64": "vite build && electron-builder --mac --x64"
+    "pack:x64": "vite build && electron-builder --mac --x64",
+    "pack:arm64+tar": "vite build && electron-builder --mac --arm64 && cd release && tar -czf \"DNS-Control-1.0.0-arm64.tar.gz\" \"mac-arm64/DNS Control.app\""
   },
   "build": {
     "appId": "com.algo.dnscontrol",
